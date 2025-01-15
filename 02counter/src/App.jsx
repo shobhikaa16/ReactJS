@@ -14,6 +14,12 @@ function App() {
     //counter = counter +1;
     if (counter < 20) {
      setCounter(counter+1)
+     setCounter(counter+1)// baar baar likhne par bhi ek clickpar ek hi baar update krtahai  aesa isiliye kyuki pura batch bnta hai 
+     // aur vo dekhat hai pura batch ban rha hai ans all work is same so ek hi baar hoga
+     // but if we really want to update more than once in single click then we will use
+     setCounter(prevCounter=> prevCounter+1)// now using this then we can use it to update the num at once
+     setCounter(prevCounter=> prevCounter+1)
+   
     }
  }
 
@@ -43,3 +49,4 @@ function App() {
 }
 
 export default App
+ 
